@@ -347,8 +347,9 @@ const AMAZON_FEATURED_PRODUCTS = [
 ];
 
 const CATEGORIES = [
-  { id: "all", label: "Toutes les Recettes", icon: "🍽️" },
-  { id: "poultry", label: "Dindes & Volailles", icon: "🍗" },
-  { id: "sides", label: "Accompagnements & Alloco", icon: "🍌" },
-  { id: "desserts", label: "Tartes & Desserts", icon: "🥧" }
+  { id: "all", label: "Toutes les Recettes" },
+  { id: "poultry", label: "Dindes & Volailles" },
+  { id: "sides", label: "Accompagnements & Alloco" },
+  { id: "desserts", label: "Tartes & Desserts" }
 ];
+
