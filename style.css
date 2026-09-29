@@ -1269,6 +1269,9 @@ h1, h2, h3, h4 {
   .main-course-layout, .dessert-layout {
     grid-template-columns: 1fr;
   }
+  .amazon-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
