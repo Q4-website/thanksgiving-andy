@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanksgiving Afro-Bénin | Recettes Festives & Équipements Amazon</title>
+  <meta name="description" content="Célébrez Thanksgiving avec les saveurs authentiques du Bénin et d'Afrique : recettes de dinde braisée, alloco gourmand, tartes et ustensiles indispensables sur Amazon.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <!-- Top Announcement Bar (Amazon Affiliation) -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span>🍂 <strong>Offres Spéciales Thanksgiving :</strong> Jusqu'à -35% sur les robots, rôtissoires et friteuses sans huile sur Amazon</span>
+      <a href="#amazon-deals" class="announcement-link">Voir les promos Amazon ↗</a>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Accueil Thanksgiving Bénin">
+        <span class="logo-badge">AfroFeast</span>
+        <span class="logo-sub">.bj</span>
+      </a>
+
+      <!-- Search Input -->
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="recipe-search" placeholder="Que souhaitez-vous cuisiner ou équiper ?" aria-label="Rechercher une recette ou un ustensile">
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="#recettes" class="nav-item">Recettes <span class="nav-dot"></span></a>
+        <a href="#expert-section" class="nav-item">Expert & Chef <span class="nav-dot"></span></a>
+        <a href="#amazon-deals" class="nav-item highlight-nav">Matériel Amazon 🔥</a>
+      </nav>
+
+      <!-- Currency Switcher & Cart -->
+      <div class="header-actions">
+        <div class="currency-toggle" title="Changer la devise">
+          <button class="currency-btn active" data-currency="FCFA">FCFA</button>
+          <button class="currency-btn" data-currency="EUR">EUR (€)</button>
+        </div>
+
+        <button class="amazon-cart-btn" id="open-cart-btn" aria-label="Voir ma liste d'achats Amazon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-label">Ma Sélection</span>
+          <span class="cart-count" id="cart-counter">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner (Inspired by Reference) -->
+    <section class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-card">
+          <span class="hero-pill">Festin de Gratitude Afro-Moderne</span>
+          <h1 class="hero-title">Thanksgiving Day</h1>
+          <p class="hero-description">
+            Rendez grâce avec ceux que vous aimez en mariant l'esprit généreux de Thanksgiving aux délices du terroir béninois. Dinde rôtie aux épices locales, alloco caramélisé et tartes parfumées : découvrez nos recettes festives et équipez-vous avec les meilleurs ustensiles sur Amazon.
+          </p>
+          <div class="hero-buttons">
+            <a href="#recettes" class="btn btn-primary">Voir toutes les recettes</a>
+            <a href="#amazon-deals" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+              </svg>
+              Boutique Amazon Réveillon
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Ribbon / Carousel (Matches 6-item bar in reference) -->
+    <section class="category-strip">
+      <div class="container">
+        <div class="category-grid">
+          
+          <div class="cat-card" data-category="poultry">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&w=300&q=80" alt="Dindes et Volailles">
+            </div>
+            <h2 class="cat-title">Dindes, Poulets & Volailles</h2>
+            <span class="cat-line"></span>
+          </div>
+
+          <div class="cat-card" data-category="sides">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=300&q=80" alt="Macaroni et Pâtes au Fromage">
+            </div>
+            <h2 class="cat-title">Macaroni, Pâtes & Gratins</h2>
+            <span class="cat-line"></span>
+          </div>
+
+          <div class="cat-card" data-category="sides">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80" alt="Pains et Brioches Festives">
+            </div>
+            <h2 class="cat-title">Pains au Beurre & Brioches</h2>
+            <span class="cat-line"></span>
+          </div>
+
+          <div class="cat-card" data-category="sides">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80" alt="Alloco et Plantains dorés">
+            </div>
+            <h2 class="cat-title">Alloco & Patates Douces</h2>
+            <span class="cat-line"></span>
+          </div>
+
+          <div class="cat-card" data-category="sides">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=80" alt="Salades et Légumes">
+            </div>
+            <h2 class="cat-title">Salades & Épices Sauvages</h2>
+            <span class="cat-line"></span>
+          </div>
+
+          <div class="cat-card" data-category="desserts">
+            <div class="cat-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80" alt="Tartes et Pâtisseries">
+            </div>
+            <h2 class="cat-title">Gâteaux, Tartes & Desserts</h2>
+            <span class="cat-line"></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert / Chef Advice (Directly modeled after Dr. Jade Raymond section) -->
+    <section class="expert-section" id="expert-section">
+      <div class="container expert-container">
+        <div class="expert-image-side">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" alt="Cheffe Aminata Tossou" class="expert-avatar-large">
+        </div>
+        <div class="expert-card">
+          <span class="expert-kicker">L'ŒIL DE NOTRE CHEFFE ET NUTRITIONNISTE</span>
+          <h2 class="expert-name">Cheffe Aminata Tossou</h2>
+          <p class="expert-bio">
+            « Cuisiner la dinde de Thanksgiving au Bénin, c'est savoir marier la tendreté de la chair avec les épices nobles : poivre sauvage de forêt, ail et pointe de gingembre. Utilisez un thermomètre sonde à cœur pour éviter le dessèchement de la volaille et dorez vos allocos à l'air fryer pour garder toute la gourmandise sans l'excès d'huile. »
+          </p>
+          <div class="expert-actions">
+            <button class="btn btn-primary" id="ask-expert-btn">Poser une question</button>
+            <a href="#amazon-deals" class="expert-affiliate-link">Voir sa sélection d'ustensiles Amazon ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Course Section (Modeled after "The Main Course" in reference) -->
+    <section class="main-course-section" id="recettes">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Le Festin Principal</h2>
+          <p class="section-subtitle">
+            Sublimez la dinde traditionnelle avec notre marinade secrète au piment doux et miel d'acacia. Voici les recettes emblématiques que toute la famille va réclamer.
+          </p>
+          
+          <!-- Category Filters -->
+          <div class="recipe-filters" id="recipe-filters">
+            <button class="filter-tab active" data-filter="all">Toutes les recettes</button>
+            <button class="filter-tab" data-filter="poultry">Volailles & Rôtis</button>
+            <button class="filter-tab" data-filter="sides">Accompagnements & Alloco</button>
+            <button class="filter-tab" data-filter="desserts">Desserts & Tartes</button>
+          </div>
+        </div>
+
+        <!-- Recipe Layout: 1 Featured Big Card + 4 Grid Cards -->
+        <div class="main-course-layout">
+          
+          <!-- Large Featured Card (Dinde Laquée) -->
+          <article class="featured-dish-card" id="featured-dish-turkey">
+            <div class="featured-img-container">
+              <span class="dish-badge">Recette Vedette</span>
+              <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&w=900&q=80" alt="Dinde Rôtie Laquée">
+            </div>
+            
+            <div class="featured-dish-body">
+              <div class="dish-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">328 Avis Gourmands</span>
+              </div>
+              <h3 class="dish-title">Dinde Rôtie Laquée au Miel & Piment Doux d'Agbangnizoun</h3>
+              <p class="dish-desc">
+                Une volaille croustillante à l'extérieur, ultra-fondante à cœur, infusée au gingembre, graines d'akpi et laquée au miel pur.
+              </p>
+
+              <!-- Amazon Affiliate Bundle Box inside the card -->
+              <div class="affiliate-bundle-box">
+                <div class="bundle-header">
+                  <span class="amazon-tag-badge">Ustensiles indispensables sur Amazon</span>
+                  <span class="prime-tag">Prime ✓</span>
+                </div>
+                <ul class="bundle-items">
+                  <li>
+                    <span>Rôtissoire Grand Format Inox</span>
+                    <strong class="bundle-price" data-fcfa="38 500 FCFA" data-eur="58,90 €">38 500 FCFA</strong>
+                  </li>
+                  <li>
+                    <span>Thermomètre Viande Sans Fil</span>
+                    <strong class="bundle-price" data-fcfa="24 900 FCFA" data-eur="37,99 €">24 900 FCFA</strong>
+                  </li>
+                </ul>
+                <div class="bundle-cta">
+                  <a href="https://www.amazon.fr/dp/B07XYZROAST?tag=thanksgivingbj-21" target="_blank" rel="noopener noreferrer" class="btn btn-amazon-buy amazon-track-btn" data-product="Rôtissoire et Thermomètre">
+                    Acheter le matériel sur Amazon ↗
+                  </a>
+                  <button class="btn btn-outline view-recipe-btn" data-id="dinde-laquee">
+                    Voir la recette complète
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2x2 Grid of Sub-Dishes -->
+          <div class="sub-dishes-grid" id="main-courses-grid">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Amazon Dedicated Affiliate High-Conversion Showcase -->
+    <section class="amazon-showcase-section" id="amazon-deals">
+      <div class="container">
+        <div class="amazon-section-header">
+          <div class="amazon-badge-row">
+            <span class="amazon-highlight-badge">BOUTIQUE OFFICIELLE THANKSGIVING</span>
+            <span class="affiliate-disclosure-pill">Liens Partenaires Amazon</span>
+          </div>
+          <h2 class="amazon-section-title">Les Meilleurs Équipements Amazon pour votre Réveillon</h2>
+          <p class="amazon-section-sub">
+            Gagnez du temps et réussissez chaque cuisson grâce aux équipements les plus plébiscités par nos chefs. Livraison express et tarifs garantis sur Amazon.
+          </p>
+        </div>
+
+        <div class="amazon-products-grid" id="amazon-products-container">
+          <!-- Rendered dynamically from AMAZON_FEATURED_PRODUCTS in data.js -->
+        </div>
+
+        <!-- Trust banner -->
+        <div class="amazon-trust-bar">
+          <div class="trust-item">
+            <span class="trust-icon">⚡</span>
+            <div>
+              <strong>Livraison Rapide Amazon Prime</strong>
+              <p>Recevez vos ustensiles à temps pour la fête</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🛡️</span>
+            <div>
+              <strong>Paiement Sécurisé & Retours Faciles</strong>
+              <p>Commandes protégées directement par Amazon</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⭐</span>
+            <div>
+              <strong>Testé & Approuvé par la Cheffe</strong>
+              <p>Qualité professionnelle adaptée aux recettes locales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thanksgiving Dessert Section (Modeled after "Thanksgiving Dessert" in reference) -->
+    <section class="dessert-section" id="desserts">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Douceurs & Desserts de Fête</h2>
+          <p class="section-subtitle">
+            Oubliez les desserts fades : le clou du spectacle reste la fameuse tarte automnale sublimée par le lait de coco et les épices douces.
+          </p>
+        </div>
+
+        <div class="dessert-layout">
+          
+          <!-- Smaller items column -->
+          <div class="dessert-side-grid" id="dessert-side-container">
+            <!-- Rendered by app.js -->
+          </div>
+
+          <!-- Sylvia's Harvest Pumpkin Pie style Featured Card -->
+          <article class="featured-dessert-card" id="featured-dessert-pumpkin">
+            <div class="dessert-img-wrapper">
+              <span class="dish-badge">Incontournable</span>
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Tarte Potiron et Coco">
+            </div>
+            
+            <div class="dessert-card-body">
+              <div class="dish-rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">290 Avis Coup de Cœur</span>
+              </div>
+              <h3 class="dessert-title">Tarte Fondante Potiron d'Automne & Lait de Coco</h3>
+              <p class="dessert-desc">
+                La Pumpkin Pie américaine réinventée pour les palais d'Afrique de l'Ouest : un appareil onctueux au potiron doux, lait de coco crémeux et cannelle dorée.
+              </p>
+              
+              <div class="nutritional-quick-stats">
+                <div class="stat-pill">
+                  <span class="stat-label">Calories</span>
+                  <strong class="stat-val">295 kcal</strong>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Glucides</span>
+                  <strong class="stat-val">34 g</strong>
+                </div>
+                <div class="stat-pill">
+                  <span class="stat-label">Cuisson</span>
+                  <strong class="stat-val">45 min</strong>
+                </div>
+              </div>
+
+              <!-- Affiliate Box for Baking Mold -->
+              <div class="dessert-affiliate-box">
+                <div class="affiliate-item-row">
+                  <img src="https://images.unsplash.com/photo-1584990347449-39bbf8a59489?auto=format&fit=crop&w=150&q=80" alt="Moule à Tarte" class="mini-prod-thumb">
+                  <div>
+                    <strong class="product-mini-name">Moule à Tarte Cannelé Inox Fond Amovible</strong>
+                    <span class="product-mini-price" data-fcfa="12 500 FCFA" data-eur="18,90 €">12 500 FCFA</span>
+                  </div>
+                </div>
+                <div class="dessert-actions-row">
+                  <a href="https://www.amazon.fr/dp/B07PIEMOLD?tag=thanksgivingbj-21" target="_blank" rel="noopener noreferrer" class="btn btn-amazon-buy amazon-track-btn" data-product="Moule Tarte">
+                    Acheter le moule sur Amazon ↗
+                  </a>
+                  <button class="btn btn-outline view-recipe-btn" data-id="tarte-potiron-coco">
+                    Lire la recette
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / Festive Menu PDF Download with Amazon Guide -->
+    <section class="festive-guide-section">
+      <div class="container guide-card">
+        <div class="guide-content">
+          <span class="guide-pill">Guide Gratuit Réveillon 2026</span>
+          <h2 class="guide-title">Téléchargez la Liste de Courses & le Guide d'Achat Amazon</h2>
+          <p class="guide-text">
+            Recevez immédiatement notre checklist complète : dosages d'épices béninoises, temps de cuisson pour chaque taille de dinde, et la liste des liens directs Amazon pour ne rien oublier.
+          </p>
+          <form class="guide-form" id="newsletter-form">
+            <input type="email" placeholder="Votre adresse e-mail (ex: koffi@gmail.com)" required aria-label="Votre adresse e-mail">
+            <button type="submit" class="btn btn-primary">Recevoir le Guide PDF</button>
+          </form>
+          <p class="guide-disclaimer">🔒 Vos données restent confidentielles. Pas de spam, uniquement des délices.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="logo-badge">AfroFeast</span>
+          <span class="logo-sub">.bj</span>
+        </div>
+        <p class="footer-text">
+          Le premier guide culinaire dédié aux fêtes de Thanksgiving et de fin d'année au Bénin et en Afrique de l'Ouest.
+        </p>
+        <p class="affiliate-legal-note">
+          <strong>Transparence Affiliation :</strong> En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les prix et disponibilités sont indiqués sous réserve de modification par Amazon.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Recettes Phares</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="quick-recipe-link" data-id="dinde-laquee">Dinde Rôtie au Miel & Piment</a></li>
+          <li><a href="#" class="quick-recipe-link" data-id="alloco-caramelise">Alloco Croustillant Festif</a></li>
+          <li><a href="#" class="quick-recipe-link" data-id="mac-and-cheese-epice">Mac & Cheese 4 Fromages</a></li>
+          <li><a href="#" class="quick-recipe-link" data-id="tarte-potiron-coco">Pumpkin Pie au Lait de Coco</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Équipements Amazon</h4>
+        <ul class="footer-links">
+          <li><a href="#amazon-deals">Friteuses Sans Huile Air Fryer</a></li>
+          <li><a href="#amazon-deals">Rôtissoires Inox Familiales</a></li>
+          <li><a href="#amazon-deals">Thermomètres à Viande Connectés</a></li>
+          <li><a href="#amazon-deals">Moulins à Épices Électriques</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Cotonou & Diaspora</h4>
+        <p class="footer-contact">
+          📍 Cotonou, République du Bénin<br>
+          ✉️ contact@afrofeast.bj<br>
+          🌐 Disponible pour expéditions locales & livraisons Amazon France / International
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>© 2026 AfroFeast.bj - Tous droits réservés. Célébrez avec gratitude et saveurs.</p>
+        <div class="bottom-links">
+          <a href="#">Politique de Confidentialité</a>
+          <a href="#">Mentions Légales</a>
+          <a href="#">Divulgation Partenaire Amazon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Recipe Details Modal -->
+  <div class="modal-overlay" id="recipe-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fermer la fenêtre">✕</button>
+      <div class="modal-body" id="modal-recipe-content">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Amazon Shopping Drawer / Cart Modal -->
+  <div class="cart-drawer-overlay" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer-content">
+      <div class="cart-drawer-header">
+        <h3>Votre Sélection d'Ustensiles Amazon</h3>
+        <button class="drawer-close-btn" id="close-cart-btn" aria-label="Fermer le panier">✕</button>
+      </div>
+      
+      <div class="cart-drawer-items" id="cart-drawer-list">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Total Estimé :</span>
+          <strong id="cart-drawer-total">0 FCFA</strong>
+        </div>
+        <button class="btn btn-amazon-buy checkout-all-btn" id="amazon-checkout-all-btn">
+          Commander tous les articles sur Amazon ↗
+        </button>
+        <p class="cart-disclaimer">Vous serez redirigé(e) vers les pages sécurisées d'Amazon pour finaliser votre commande.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
